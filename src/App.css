@@ -1,0 +1,202 @@
+.app-root {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 32px 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.app-header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.stepper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  max-width: 720px;
+  width: 100%;
+  justify-content: center;
+}
+
+.stepper-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.stepper-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  background: #fff;
+}
+
+.stepper-circle.active {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.stepper-circle.completed {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.stepper-label {
+  text-align: center;
+}
+
+.step-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.step-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.step-subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.user-need-quote {
+  font-style: italic;
+  color: #374151;
+}
+
+.need-input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  resize: vertical;
+  outline: none;
+}
+
+.need-input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.2);
+}
+
+.step-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.step-footer {
+  margin-top: 12px;
+}
+
+.category-pill {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.benefit-card {
+  text-align: left;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 12px 14px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+  border-color: #7c3aed;
+}
+
+.benefit-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.benefit-coverage {
+  font-size: 0.83rem;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.benefit-description {
+  font-size: 0.83rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.benefit-cta {
+  font-size: 0.8rem;
+  color: #7c3aed;
+}
+
+.plan-list {
+  margin-top: 12px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.plan-list li {
+  margin-bottom: 8px;
+}
+
+.app-footer {
+  margin-top: 24px;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
