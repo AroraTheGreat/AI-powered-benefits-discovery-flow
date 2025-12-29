@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# AI-Powered Benefits Discovery Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend assignment for **Plum – SDE Intern** role.
 
-Currently, two official plugins are available:
+This project helps employees understand **which health benefit applies to their problem** and explains **how to use it**, using an AI-powered flow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 What does this project do?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Employees often describe health issues in simple language but don’t know:
+- which benefit applies
+- how to actually use that benefit
 
-## Expanding the ESLint configuration
+This app solves that problem in **3 simple steps**:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. User describes their health concern (free text)
+2. AI classifies the concern into a benefit category
+3. App shows relevant benefits and generates a 3-step action plan
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧭 Application Flow
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Step 1 – Describe the problem
+User enters a health concern like:
+> “I have tooth pain for 3 days”
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Step 2 – Category & benefits
+The app:
+- Detects the category (Dental / Mental Health / Vision / General Health)
+- Shows benefit cards with coverage information
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Step 3 – Action plan
+When a benefit is selected, the app generates:
+- A **3-step practical action plan**
+- Explains how the employee can use the benefit
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Tech Stack
+
+- **React + TypeScript**
+- **Vite**
+- **React Context API** (global state management)
+- **Mock AI service** (simulates LLM calls)
+- CSS for styling
+
+---
+
+## 📂 Project Structure
+
