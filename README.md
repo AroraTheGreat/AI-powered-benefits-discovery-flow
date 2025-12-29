@@ -1,5 +1,7 @@
 # AI-Powered Benefits Discovery Flow
 
+🔗 Live Demo: https://ai-powered-benefits-discovery-flow.vercel.app/
+
 Frontend assignment for **Plum – SDE Intern** role.
 
 This project helps employees understand **which health benefit applies to their problem** and explains **how to use it**, using an AI-powered, step-based flow.
