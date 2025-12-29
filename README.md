@@ -50,3 +50,13 @@ When a benefit is selected, the app generates:
 
 ## 📂 Project Structure
 
+## 📸 Screenshots
+
+### Step 1 – Describe the problem
+![Step 1](screenshots/Step1.png)
+
+### Step 2 – Category & benefits
+![Step 2](screenshots/Step2.png)
+
+### Step 3 – Action plan
+![Step 3](screenshots/Step3.png)
